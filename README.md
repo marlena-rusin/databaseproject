@@ -33,3 +33,21 @@ dotnet run seeddata
 ```
 
 ## How the application works 
+https://github.com/marlena-rusin/databaseproject/blob/main/ApplicationOverview.pdf
+
+## Users for tests 
+- Admin - login and password
+ ```java
+jankowalski@gmail.com
+```
+```java
+Admin1234!
+```
+
+- User - login and password
+ ```java
+olakot@gmail.com
+```
+```java
+User1234!
+```
