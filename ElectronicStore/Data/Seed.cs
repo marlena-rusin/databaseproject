@@ -19,8 +19,8 @@ namespace ElectronicStore.Data
                     INSERT INTO Products (Name, Brand, Category, Price, Description, CreatedAt)
                     VALUES
                     ('Laptop LENOVO IdeaPad', 'Lenovo', 'Computers', 4500, 'Super laptop',  GETDATE()),
-                    ('Smartwatch HUAWEI Watch GT ', 'Huawei', 'Accessorias', 3000, 'Super smartwatch',  GETDATE()),
-                    ('Mouse LOGITECH M185', 'Logitech', 'Accessorias', 200, 'Super mouse',  GETDATE())
+                    ('Smartwatch HUAWEI Watch GT ', 'Huawei', 'Accesorias', 3000, 'Super smartwatch',  GETDATE()),
+                    ('Mouse LOGITECH M185', 'Logitech', 'Accesorias', 200, 'Super mouse',  GETDATE())
                 ");
             }
         }
