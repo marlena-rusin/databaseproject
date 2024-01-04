@@ -11,17 +11,17 @@
 
 
 ```java
-...
+git clone https://github.com/marlena-rusin/databaseproject.git
 ```
 
-(2) Open appsettings.json file and update connection string's data source=your server name
+(2) Open appsettings.json file and update ConnectionStrings set yout own DefaultConnection by changing Data Source name 
 
 ```java
-...
+"DefaultConnection": "Data Source=your-data-source;Initial Catalog=WebApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
 ```
 (3) Delete Migration folder 
 
-(4) Open Package manager console
+(4) Open Package Manager Console and run 
 ```java
 Add-Migration FirstMigration
 Update-Database
@@ -31,3 +31,5 @@ Update-Database
 ```java
 dotnet run seeddata
 ```
+
+## How the application works 
