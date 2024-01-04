@@ -1,0 +1,17 @@
+﻿@using ElectronicStore.ViewModels
+@model OrderViewModel
+@{
+    ViewData["Title"] = "Make";
+}
+
+<h2 class="text-center mb-5">Make an order</h2>
+
+<form method="post" asp-action="Make">
+    <div class="form-group">
+        <label asp-for="ProductId" class="form-label">Select Product</label>
+        @Html.DropDownListFor(m => m.ProductId, Model.Products, "Select a product", new { @class = "form-control" })
+        <span asp-validation-for="ProductId" class="text-danger"></span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Order</button>
+</form>

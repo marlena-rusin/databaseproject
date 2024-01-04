@@ -1,0 +1,39 @@
+﻿@model Product
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form method="post" asp-controller="Product" asp-action="Edit" asp-route-id="@Model.Id">
+    <input asp-for="Id" type="hidden" />
+
+    <div class="form-group">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Brand" class="form-label">Brand</label>
+        <input asp-for="Brand" class="form-control" placeholder="Enter brand" />
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Category" class="form-label">Category</label>
+        <input asp-for="Category" class="form-control" placeholder="Enter category" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="form-label">Price</label>
+        <input asp-for="Price" class="form-control" placeholder="Enter price" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="form-label">Description</label>
+        <input asp-for="Description" class="form-control" placeholder="Enter description" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
