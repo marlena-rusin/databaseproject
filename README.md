@@ -30,8 +30,7 @@ Update-Database
 dotnet run seeddata
 ```
 
-(6) Stop Developer PowerShell 
-(7) Run app
+(6) Stop Developer PowerShell and then run app in your code editor
 
 ## How the application works 
 https://github.com/marlena-rusin/databaseproject/blob/main/ApplicationOverview.pdf
