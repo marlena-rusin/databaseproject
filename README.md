@@ -24,11 +24,14 @@ git clone https://github.com/marlena-rusin/databaseproject.git
 Add-Migration FirstMigration
 Update-Database
 ```
-(5) Run the app in console with sample data 
+(5) Load test data in Developer PowerShell (two users and four products)
 
 ```java
 dotnet run seeddata
 ```
+
+(6) Stop Developer PowerShell 
+(7) Run app
 
 ## How the application works 
 https://github.com/marlena-rusin/databaseproject/blob/main/ApplicationOverview.pdf
